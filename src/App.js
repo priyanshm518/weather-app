@@ -13,6 +13,7 @@ function App() {
 
     if (!city) return;
 
+    
     setLoading(true);
     setError("");
     setWeather(null);
