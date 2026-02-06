@@ -31,7 +31,8 @@ function App() {
   const [activeTab, setActiveTab] = useState("today");
   const searchInputRef = useRef(null);
 
-  const API_KEY = "1f4490d948a844b04c172da9e334d8a4";
+const API_KEY = process.env.REACT_APP_WEATHER_KEY;
+
 
   // Dynamic theme colors based on weather and time
   const themeColors = {
@@ -252,7 +253,9 @@ function App() {
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
             animationDelay: `${Math.random() * 5}s`,
-            size: `${Math.random() * 3 + 1}px`
+           width: `${Math.random() * 3 + 1}px`,
+height: `${Math.random() * 3 + 1}px`
+
           }} />
         ))}
       </div>
