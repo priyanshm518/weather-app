@@ -1,19 +1,20 @@
 import { useState, useEffect, useRef } from "react";
 import { 
   WiDaySunny, WiCloudy, WiRain, WiSnow, WiThunderstorm, 
-  WiFog, WiThermometer, WiHumidity, WiBarometer, 
-  WiStrongWind, WiSunrise, WiSunset, WiRefresh,
+  WiFog, WiBarometer, WiSunrise, WiSunset, WiRefresh,
   WiMoonAltWaxingCrescent3, WiMoonAltFull
 } from "react-icons/wi";
 import { 
   FaSearch, FaMapMarkerAlt, FaWind, FaTemperatureHigh, 
-  FaTint, FaCloud, FaEye, FaArrowUp, FaArrowDown,
+  FaTint, FaEye, FaArrowUp, FaArrowDown,
   FaBolt, FaCalendarDay
 } from "react-icons/fa";
+
 import { 
   RiCelsiusFill, RiFahrenheitFill, 
-  RiTimerFlashLine, RiMoonClearLine 
+  RiMoonClearLine 
 } from "react-icons/ri";
+
 import { BsDropletHalf, BsCloudsFill } from "react-icons/bs";
 import "./App.css";
 
