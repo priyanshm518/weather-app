@@ -232,10 +232,12 @@ function App() {
       : Math.round(temp + (humidity / 100) * 3.6 - (wind / 2.5));
   };
 
-  // Load initial weather
-  useEffect(() => {
-    fetchWeather("New York");
-  }, [unit]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+useEffect(() => {
+  fetchWeather("New York");
+}, [unit]);
+
+
 
   // Focus search input on load
   useEffect(() => {
